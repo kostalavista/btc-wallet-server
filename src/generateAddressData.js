@@ -7,7 +7,7 @@ function generateAddressData(address) {
 	const transactions = [];
 
 	for (let i = 0; i < transactionCount; i++) {
-		const time = getRandomIntInclusive(1605903150, 1606903150);
+		const time = getRandomIntInclusive(1605903150000, 1606903150000);
 		const isIncoming = getRandomIntInclusive(0, 1);
 		const secondAddress = getBTCAddress(getRandomIntInclusive(0, 9));
 		const value = getRandomIntInclusive(1, 500);
